@@ -1,0 +1,120 @@
+@import url(main.css);
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.outerContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.rightContainer {
+    height: 30rem;
+    background-image: url('../assets/theCraftyBeeLogo.png');
+    background-position: center center;
+}
+
+.leftContainer {
+    background-color: var(--mainColorTwo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 25%;
+    padding-right: 25%;
+    align-items: center;
+    text-align: center;
+}
+
+.alt-font {
+    margin-top: -10px;
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: 100;
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    border-radius: 25px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    transition: .3s ease-in;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #97c4b8;
+    transition: .3s ease-in;
+}
+
+.sign-up {
+    background: var(--mainColor);
+    padding: 1rem 30% 2rem 30%;
+    margin-bottom: -10px;
+    width: 100vw;
+    margin-left: -30%;
+}
+
+.sign-up-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.sign-up-grid h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sign-up-header {
+    font-family: 'Special Elite', cursive;
+    font-weight: 100;
+}
+
+.email-form {
+    background-color: var(--mainColor);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+
+.email-form:focus {
+    outline: none;
+}
+
+.submit-button {
+    border: none;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 35em) {
+
+    .container {
+        margin: 0;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+
+    .outerContainer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .leftContainer {
+        padding-bottom: 20px;
+    }
+
+    .sign-up {
+        padding: none;
+    }
+
+    .sing-up-grid {
+        grid-template-columns: auto;
+    }
+}

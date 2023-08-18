@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import  PageHolder  from "./components/PageHolder";
+import NavbarOne from "./components/NavbarOne";
+import { NavbarTwo } from "./components/NavbarTwo"
+import { Footer } from "./components/Footer";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import { reducer } from './redux/storeState'
+
+import './app.css'
+
+const store = createStore(reducer);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <div className="testingOut">
+      <div >
+        <NavbarOne />
+        <div className="line"></div>
+        <NavbarTwo />
+      </div>
+      <div className="line"></div>
+      <div className="page-holder">
+        <PageHolder />
+        <Footer />
+      </div>
+      <div>
+        
+      </div>
+      </div>
+    </Provider>
+  )
 }
+
+// async function getUser() {
+//   let res = await fetch('http://localhost:8000/users/Yuri/123Password')
+//   let user = await res.json()
+//   setUser(user.User.username)
+// } 
 
 export default App;
