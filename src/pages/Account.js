@@ -6,7 +6,7 @@ import { PurchaseHistory } from "../components/PurchaseHistory"
 
 import '../stylesheets/store.css'
 import '../stylesheets/account.css'
-import '../app.css'
+import '../App.css'
 
 
 function Account(props) {
