@@ -6,15 +6,15 @@ export default function PanelPictures() {
         <div className="panelHolder">
             <div className='panel'>
                 <img src={require('../assets/panels/1.jpg')} className='panel-picture'/>
-                <h1 className='panel-text'>Header</h1>
+                <h1 className='panel-text'>Hand Crafted</h1>
             </div>
             <div className='panel'>
                 <img src={require('../assets/panels/2.png')} className='panel-picture'/>
-                <h1 className='panel-text'>Header</h1>
+                <h1 className='panel-text'>High Quality</h1>
             </div>
             <div className='panel'>
                 <img src={require('../assets/panels/3.jpg')} className='panel-picture'/>
-                <h1 className='panel-text'>Header</h1>
+                <h1 className='panel-text'>Made to Order</h1>
             </div>
         </div>
         <br></br>
@@ -54,7 +54,7 @@ export default function PanelPictures() {
                 <img src={require('../assets/instagram/Instagram2.jpg')} className='panel-picture'/>
             </div>
             <div className='instagram-panel'>
-                <img src={require('../assets/instagram/Instagram4.JPG')} className='panel-picture'/>
+                <img src={require('../assets/instagram/Instagram4.jpg')} className='panel-picture'/>
             </div>
         </div>
         </div>
